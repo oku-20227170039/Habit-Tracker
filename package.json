@@ -1,5 +1,6 @@
 {
   "name": "habit-tracker",
+  "homepage": "https://oku-20227170039.github.io/Habit-Tracker",
   "version": "1.0.0",
   "dependencies": {
     "@capacitor/android": "^7.4.4",
