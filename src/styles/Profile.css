@@ -1,0 +1,381 @@
+body {
+    background-color: #f7f9f9;
+    font-family: "Poppins", sans-serif;
+}
+
+.profile-container {
+    max-width: 600px;
+    margin: 40px auto;
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 30px 40px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+.profile-header img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid #00bfa6;
+    object-fit: cover;
+}
+
+.profile-header h2 {
+    margin-top: 10px;
+
+}
+
+.profile-header p {
+    color: #777;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+/* Fotoğraf yükleme alanı */
+.upload-section {
+    margin-top: 10px;
+}
+
+.upload-section input[type="file"] {
+    display: none;
+}
+
+.upload-section button {
+    background: #00bfa6;
+    border: none;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 8px;
+    transition: 0.3s;
+}
+
+.upload-section button:hover {
+    background: #00a08c;
+}
+
+/* Ayarlar kısmı */
+.settings-section {
+    background: #f9fbfb;
+    border-radius: 15px;
+    padding: 20px;
+    margin-top: 30px;
+    border: 1px solid #e5efee;
+}
+
+.setting-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 0;
+    font-size: 15px;
+    color: #333;
+    border-bottom: 1px solid #edf2f1;
+}
+
+.setting-item:last-child {
+    border-bottom: none;
+}
+
+/* Switch (anahtar tasarımı) */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 46px;
+    height: 24px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 4px;
+    bottom: 3px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+input:checked+.slider {
+    background-color: #008d7a;
+}
+
+input:checked+.slider:before {
+    transform: translateX(22px);
+}
+
+/* Çıkış butonu */
+.logout-btn {
+    background: #e74c3c;
+    color: #fff;
+    border: none;
+    width: 100%;
+    padding: 12px;
+    border-radius: 12px;
+    margin-top: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.logout-btn:hover {
+    background: #c0392b;
+}
+
+/* Karanlık tema */
+body.dark-mode {
+    background-color: #1f1f1f;
+}
+
+body.dark-mode .profile-container {
+    background: #1b1e2b;
+    box-shadow: 0 4px 18px rgba(255, 255, 255, 0.03);
+    color: #f5f5f5;
+}
+
+body.dark-mode .settings-section {
+    background: #00bfa6;
+    border-color: #555;
+}
+
+body.dark-mode .logout-btn {
+    background: #ff4d4d;
+}
+
+.upload-section {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.upload-section input[type="file"] {
+    display: block;
+    margin-bottom: 10px;
+    background-color: #008c7a;
+
+}
+
+.upload-section button {
+    background: #00bfa6;
+    border: none;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* 🔙 Geri butonu (beyaz kutu içinde, yeşil) */
+.profile-header {
+    position: relative;
+}
+
+/* Ok butonu beyaz kutunun sol üst köşesinde */
+.back-btn {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: #00bfa6;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    padding: 6px 14px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.back-btn:hover {
+    background: #00a08d;
+    transform: scale(1.05);
+}
+
+/* Dark mode uyumu */
+body.dark-mode .back-btn {
+    background: #009e8a;
+    color: #f1f1f1;
+}
+
+body.dark-mode .back-btn:hover {
+    background: #00bfa6;
+}
+
+/* Profil başlığı */
+.profile-header {
+    position: relative;
+}
+
+/* 🔙 Daire içinde modern ok */
+.back-btn {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: 38px;
+    height: 38px;
+    background: #00bfa6;
+    border: none;
+    border-radius: 50%;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 191, 166, 0.25);
+    transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
+}
+
+.back-btn:hover {
+    background: #00a18e;
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 191, 166, 0.3);
+}
+
+/* Dark mode uyumu */
+body.dark-mode .back-btn {
+    background: #008c7a;
+    color: #f1f1f1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+body.dark-mode .back-btn:hover {
+    background: #00bfa6;
+    box-shadow: 0 6px 12px rgba(0, 191, 166, 0.4);
+}
+
+/* Daire buton (aynı kalsın, yazı yok) */
+.back-btn {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: 38px;
+    height: 38px;
+    background: #00bfa6;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 191, 166, 0.25);
+    transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
+    display: inline-flex;
+    /* üçgeni ortalamak için */
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    /* önemli */
+}
+
+.back-btn:hover {
+    background: #00a18e;
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 191, 166, 0.3);
+}
+
+/* İçteki sola bakan üçgen (pure CSS) */
+.triangle-left {
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    /* üçgenin üst alt kenarları */
+    border-bottom: 8px solid transparent;
+    border-right: 12px solid #ffffff;
+    /* üçgen rengi ve yönü */
+}
+
+/* Dark mode uyumu */
+body.dark-mode .back-btn {
+    background: #008c7a;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+body.dark-mode .back-btn:hover {
+    background: #00bfa6;
+    box-shadow: 0 6px 12px rgba(0, 191, 166, 0.4);
+}
+
+/* 🗂️ Alışkanlık silme paneli */
+.habit-delete-section {
+    margin-top: 30px;
+    background: #f9fbfb;
+    border: 1px solid #e5efee;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: left;
+}
+
+.habit-delete-section h3 {
+    color: #00bfa6;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.habit-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.habit-list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 8px;
+    border-bottom: 1px solid #eaeaea;
+    font-size: 15px;
+}
+
+.habit-list li:last-child {
+    border-bottom: none;
+}
+
+.delete-btn {
+    background: #ff5c5c;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 5px 10px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.delete-btn:hover {
+    background: #e04848;
+    transform: scale(1.1);
+}
+
+.no-habits {
+    text-align: center;
+    color: #777;
+}
+
+/* 🌙 Dark mode desteği */
+body.dark-mode .habit-delete-section {
+    background: #1f2433;
+    border-color: #2d3447;
+}
+
+body.dark-mode .delete-btn {
+    background: #ff4d4d;
+}

@@ -1,0 +1,47 @@
+body {
+    background: #0d0d0d;
+    color: #f3f3f3;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    margin: 0;
+}
+
+button {
+    background: #00bfa6;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 6px;
+}
+
+button:hover {
+    background: #479bff;
+}
+
+.habit-card {
+    background: #ffffff00;
+    border: 4px dotted #00bfa6;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.habit-card.done {
+    background: #148914;
+    transform: scale(1.05);
+}
+
+h3 {
+    color: #00ffcc;
+}
+
+span {
+    transition: transform 0.2s;
+}
+
+span:hover {
+    transform: scale(1.2);
+}

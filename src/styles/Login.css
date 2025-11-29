@@ -1,0 +1,97 @@
+body {
+    background: #f5f9f8;
+    font-family: "Poppins", sans-serif;
+}
+
+.login-container {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-card {
+    background: white;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 350px;
+}
+
+.login-icon {
+    background: #00bfa6;
+    color: white;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    font-size: 24px;
+    margin: 0 auto 15px;
+}
+
+h2 {
+    margin: 10px 0;
+    color: #00bfa6;
+}
+
+p {
+    color: #00bfa6;
+}
+
+form {
+    margin-top: 20px;
+    text-align: left;
+}
+
+label {
+    font-size: 14px;
+    color: #333;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    margin: 6px 0 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.login-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.login-options a {
+    color: #00bfa6;
+    text-decoration: none;
+}
+
+.login-btn {
+    width: 100%;
+    background: #00bfa6;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login-btn:hover {
+    background: #00a58f;
+}
+
+.toggle-auth {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.toggle-auth span {
+    color: #00bfa6;
+    cursor: pointer;
+}
